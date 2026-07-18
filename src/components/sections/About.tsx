@@ -42,44 +42,7 @@ export default function About() {
             </div>
             
             <div className="mt-10">
-              {/* Hand-drawn SVG signature */}
-              <svg
-                viewBox="0 0 280 70"
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-14 w-auto opacity-70"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ color: "hsl(var(--primary))" }}
-              >
-                {/* М */}
-                <path d="M8,52 L8,20 L22,42 L36,20 L36,52" />
-                {/* а */}
-                <path d="M44,34 Q44,28 50,28 Q58,28 58,36 L58,52 Q54,52 50,50 Q44,48 44,42 Q44,34 52,34 L58,34" />
-                {/* р */}
-                <path d="M64,52 L64,28 Q72,26 76,30 Q80,34 76,40 Q72,44 64,42" />
-                {/* к */}
-                <path d="M86,20 L86,52 M86,38 L98,28 M88,40 L100,52" />
-                {/* у */}
-                <path d="M106,28 L114,48 M122,28 L114,48 Q110,58 104,60" />
-                {/* с */}
-                <path d="M140,34 Q136,28 130,30 Q124,32 124,40 Q124,48 130,50 Q136,52 140,46" />
-                {/* small divider flourish */}
-                <path d="M146,40 Q158,36 160,40" />
-                {/* И */}
-                <path d="M168,28 L168,52 M168,28 L188,52 M188,28 L188,52" />
-                {/* . */}
-                <circle cx="193" cy="51" r="1.2" fill="currentColor" stroke="none" />
-                {/* Д */}
-                <path d="M198,52 L200,28 L220,28 L222,52 M196,52 L224,52" />
-                {/* . */}
-                <circle cx="228" cy="51" r="1.2" fill="currentColor" stroke="none" />
-                {/* trailing flourish */}
-                <path d="M234,48 Q248,38 258,44 Q264,48 260,54" />
-              </svg>
-              <p className="font-serif font-bold text-lg mt-2 text-primary">Маркус Игорь Демьянович</p>
+              <p className="font-serif font-bold text-lg text-primary">Маркус Игорь Демьянович</p>
             </div>
           </motion.div>
 
