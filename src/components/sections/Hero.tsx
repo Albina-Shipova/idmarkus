@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, ArrowRight, Shield, Clock, Scale, Briefcase, ChevronDown } from "lucide-react";
-import heroPhoto from "@assets/image_1784377625211.png";
+import heroPhoto from "@assets/image_1784377625211.jpg";
 
 export default function Hero() {
   const stats = [
