@@ -112,7 +112,7 @@ export default function Hero() {
                 {/* Name plate overlay at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/95 via-primary/70 to-transparent p-5 pt-10">
                   <p className="font-serif font-bold text-white text-lg leading-tight">Маркус Игорь Демьянович</p>
-                  <p className="text-secondary text-sm font-medium mt-0.5">Частный юрист</p>
+                  <p className="text-secondary text-sm font-medium mt-0.5">Частный юрист · Медиатор</p>
                 </div>
               </div>
 

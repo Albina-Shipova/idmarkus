@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
+import WorkFormat from "@/components/sections/WorkFormat";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Education from "@/components/sections/Education";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <WorkFormat />
         <About />
         <Services />
         <Education />
