@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Plane, Building2, Laptop } from "lucide-react";
+import { Plane, Building2, Laptop, Calendar } from "lucide-react";
 
 export default function WorkFormat() {
   const items = [
@@ -80,6 +80,24 @@ export default function WorkFormat() {
               </p>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="text-center mt-10"
+        >
+          <a
+            href="https://dikidi.net/904844?p=0.pi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-md font-medium text-lg hover:bg-primary/90 transition-all hover:-translate-y-1"
+          >
+            <Calendar className="w-5 h-5" />
+            Записаться онлайн
+          </a>
         </motion.div>
       </div>
     </section>

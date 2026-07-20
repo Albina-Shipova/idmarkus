@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Phone, Clock, MapPin, Send } from "lucide-react";
+import { Phone, Clock, MapPin, Send, Calendar } from "lucide-react";
+import qrDikidi from "@assets/qr_dikidi.jpg";
 
 export default function Contacts() {
   return (
@@ -89,13 +90,33 @@ export default function Contacts() {
                     <Phone className="w-6 h-6" />
                     Позвонить сейчас
                   </a>
-                  <a 
+                  <a
                     href="mailto:"
                     className="w-full py-4 px-6 bg-white/10 text-white border border-white/20 rounded-lg font-bold text-lg flex items-center justify-center gap-3 hover:bg-white/20 hover:-translate-y-1 transition-all"
                   >
                     <Send className="w-6 h-6" />
                     Написать на почту
                   </a>
+                  <a
+                    href="https://dikidi.net/904844?p=0.pi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-4 px-6 bg-white/10 text-white border border-white/20 rounded-lg font-bold text-lg flex items-center justify-center gap-3 hover:bg-white/20 hover:-translate-y-1 transition-all"
+                  >
+                    <Calendar className="w-6 h-6" />
+                    Записаться онлайн
+                  </a>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-white/10 flex items-center gap-4">
+                  <img
+                    src={qrDikidi}
+                    alt="QR-код для онлайн-записи"
+                    className="w-20 h-20 rounded-lg bg-white p-1.5 flex-shrink-0"
+                  />
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Отсканируйте камерой телефона, чтобы записаться на приём онлайн
+                  </p>
                 </div>
               </div>
             </div>
