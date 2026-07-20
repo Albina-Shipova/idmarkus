@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, X, ZoomIn } from "lucide-react";
 import diploma1 from "@assets/051125-084613V9-harant_1784376931227.webp";
 import diploma2 from "@assets/031125-0109302o-harant_1784376931228.webp";
-import samozanyatost2021 from "@assets/samozanyatost_2021.jpg";
-import diplomaMediator2026 from "@assets/diploma_mediator_2026.jpg";
-import certificateMediator2026 from "@assets/certificate_mediator_2026.jpg";
+import samozanyatost2021 from "@assets/samozanyatost_2021.webp";
+import diplomaMediator2026 from "@assets/diploma_mediator_2026.webp";
+import certificateMediator2026 from "@assets/certificate_mediator_2026.webp";
 
 export default function Education() {
   const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
