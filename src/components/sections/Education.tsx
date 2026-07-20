@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GraduationCap, Award, X, ZoomIn } from "lucide-react";
+import { GraduationCap, X, ZoomIn } from "lucide-react";
 import diploma1 from "@assets/051125-084613V9-harant_1784376931227.webp";
 import diploma2 from "@assets/031125-0109302o-harant_1784376931228.webp";
-import diploma3 from "@assets/031125-053704jD-harant_1784376931227.webp";
+import samozanyatost2021 from "@assets/samozanyatost_2021.jpg";
+import diplomaMediator2026 from "@assets/diploma_mediator_2026.jpg";
+import certificateMediator2026 from "@assets/certificate_mediator_2026.jpg";
 
 export default function Education() {
   const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
@@ -32,20 +34,31 @@ export default function Education() {
       spec: "40.04.01 «Гражданское право и гражданский процесс»",
       qual: null,
       verified: false
+    },
+    {
+      year: "2026",
+      type: "Профессиональная переподготовка",
+      inst: "Международный Центр Дистанционного Образования (г. Москва)",
+      spec: "Юриспруденция и медиация, решение от 16 марта 2026 г.",
+      qual: "Юрист (юрист-медиатор)",
+      verified: false
+    },
+    {
+      year: "2026",
+      type: "Квалификационный сертификат",
+      inst: "ООО «МЦДО» — специалист в области медиации (медиатор)",
+      spec: "Квалификационный уровень 7, рег. от 16.03.2026, действителен до 16.03.2029",
+      qual: null,
+      verified: false
     }
   ];
-
-  const additionalEducation = {
-    year: "2025",
-    type: "Дополнительное образование",
-    inst: "Сертификат участника IX Всероссийского юридического форума «Проблемы правового регулирования имущественного оборота»",
-    spec: "Образовательный центр ГАРАНТ, Москва, 24 сентября 2025 г., 12 академических часов",
-  };
 
   const images = [
     { src: diploma1, alt: "Диплом о среднем профессиональном образовании, 2018" },
     { src: diploma2, alt: "Диплом Бакалавра, 2025" },
-    { src: diploma3, alt: "Сертификат IX Всероссийского юридического форума, 2025" },
+    { src: samozanyatost2021, alt: "Справка о постановке на учёт как самозанятого, 2021" },
+    { src: diplomaMediator2026, alt: "Диплом о профессиональной переподготовке «Юрист-медиатор», 2026" },
+    { src: certificateMediator2026, alt: "Квалификационный сертификат медиатора, 2026" },
   ];
 
   return (
@@ -97,38 +110,20 @@ export default function Education() {
                   </div>
                 </motion.div>
               ))}
-
-              <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                className="relative pl-8 md:pl-10"
-              >
-                <div className="absolute -left-[21px] top-1 w-10 h-10 bg-card rounded-full border-4 border-background flex items-center justify-center shadow-md">
-                  <Award className="w-4 h-4 text-secondary" />
-                </div>
-                
-                <div className="bg-primary/5 border border-primary/10 rounded-xl p-6 shadow-sm">
-                  <span className="text-secondary font-bold text-lg mb-2 block">Дополнительное образование</span>
-                  <p className="text-primary font-medium mb-2">{additionalEducation.inst}</p>
-                  <p className="text-muted-foreground text-sm">{additionalEducation.spec}</p>
-                </div>
-              </motion.div>
             </div>
           </div>
 
           {/* Gallery */}
           <div className="lg:col-span-5">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="sticky top-32 space-y-6"
+              className="lg:sticky lg:top-32 space-y-6"
             >
               <h3 className="text-2xl font-serif font-bold text-primary mb-6">Документы</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 {images.map((img, idx) => (
                   <div 
                     key={idx}
