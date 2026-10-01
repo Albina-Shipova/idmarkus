@@ -85,6 +85,9 @@
   }
   function closeLb() {
     lb.hidden = true;
+    lbImg.removeAttribute("src");
+    lbImg.alt = "";
+    lbCap.textContent = "";
   }
   document.querySelectorAll("[data-lightbox]").forEach(function (card) {
     card.addEventListener("click", function () {
