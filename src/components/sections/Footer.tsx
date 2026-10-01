@@ -45,8 +45,9 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div className="text-white/70 text-sm leading-relaxed">
-                  г. Вельск, ул. Дзержинского, 109<br />
-                  2 этаж, офис 18
+                  165150, Архангельская обл.,<br />
+                  г. Вельск ул. Дзержинского<br />
+                  д. 109 офис 18
                 </div>
               </div>
               <div className="flex items-start gap-3">
