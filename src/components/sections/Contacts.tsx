@@ -65,8 +65,7 @@ export default function Contacts() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Адрес</p>
-                    <p className="text-lg font-medium text-foreground">г. Вельск, ул. Дзержинского, 109</p>
-                    <p className="text-sm text-muted-foreground mt-1">2 этаж, офис 18</p>
+                    <p className="text-lg font-medium text-foreground">165150, Архангельская обл., г. Вельск ул. Дзержинского д. 109 офис 18</p>
                   </div>
                 </div>
               </div>
